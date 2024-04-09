@@ -18,11 +18,23 @@
     "importHelpers": true,
     "target": "ES2022",
     "module": "ES2022",
+    "allowSyntheticDefaultImports": true,
     "useDefineForClassFields": false,
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "paths": {
+      "crypto" : [
+        "node_modules/crypto-js"
+      ],
+      "stream": [
+        "node_modules/stream-browserify"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
